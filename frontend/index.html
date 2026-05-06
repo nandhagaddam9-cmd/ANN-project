@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supercapacitor AI Predictor</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="left-panel">
+
+      <div class="header">
+        <h1>Supercapacitor AI Predictor</h1>
+
+        <p>
+          Physics-informed AI dashboard for predicting electrochemical
+          performance of advanced supercapacitor materials.
+        </p>
+      </div>
+
+      <div class="input-card">
+
+        <div class="card-top">
+          <h2>Material Inputs</h2>
+          <span>AI READY</span>
+        </div>
+
+        <div class="form-group">
+          <label>Material Type</label>
+
+          <select id="material">
+            <option>Activated Carbon</option>
+            <option>Graphene</option>
+            <option>MXene</option>
+            <option>Carbon Nanotube</option>
+            <option>Metal Oxide</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Capacitance (F/g)</label>
+          <input type="number" id="capacitance" placeholder="300">
+        </div>
+
+        <div class="form-group">
+          <label>Voltage Window (V)</label>
+          <input type="number" id="voltage" placeholder="2.7">
+        </div>
+
+        <div class="form-group">
+          <label>Current Density (A/g)</label>
+          <input type="number" id="currentDensity" placeholder="5">
+        </div>
+
+        <div class="form-group">
+          <label>Surface Area (m²/g)</label>
+          <input type="number" id="surfaceArea" placeholder="1200">
+        </div>
+
+        <div class="form-group">
+          <label>Electrolyte Type</label>
+
+          <select>
+            <option>KOH</option>
+            <option>Na2SO4</option>
+            <option>H2SO4</option>
+            <option>Ionic Liquid</option>
+          </select>
+        </div>
+
+        <button id="predictBtn">
+          Predict Performance
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="right-panel">
+
+      <!-- METRIC CARDS -->
+
+      <div class="metrics">
+
+        <div class="metric-card">
+          <h3>Predicted Efficiency</h3>
+          <p id="efficiency">--</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>Energy Density</h3>
+          <p id="energy">--</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>Power Density</h3>
+          <p id="power">--</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>Cycle Stability</h3>
+          <p id="cycle">--</p>
+        </div>
+
+      </div>
+
+      <!-- CHART -->
+
+      <div class="chart-card">
+
+        <div class="chart-header">
+          <h2>Performance Analysis</h2>
+          <span>Model Accuracy 96.1%</span>
+        </div>
+
+        <div class="chart">
+
+          <div class="bar" style="height: 120px;"></div>
+          <div class="bar" style="height: 180px;"></div>
+          <div class="bar" style="height: 230px;"></div>
+          <div class="bar" style="height: 170px;"></div>
+          <div class="bar" style="height: 260px;"></div>
+          <div class="bar" style="height: 200px;"></div>
+
+        </div>
+
+      </div>
+
+      <!-- INFO CARDS -->
+
+      <div class="info-grid">
+
+        <div class="info-card">
+          <h2>AI Recommendation</h2>
+
+          <p>
+            Graphene-based composite materials with optimized
+            current density provide superior energy retention and
+            long-term electrochemical stability.
+          </p>
+        </div>
+
+        <div class="info-card">
+
+          <h2>System Status</h2>
+
+          <div class="status-row">
+            <span>Prediction Engine</span>
+            <span class="green">ONLINE</span>
+          </div>
+
+          <div class="status-row">
+            <span>ANN Model</span>
+            <span class="blue">ACTIVE</span>
+          </div>
+
+          <div class="status-row">
+            <span>Dataset Health</span>
+            <span class="yellow">STABLE</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
